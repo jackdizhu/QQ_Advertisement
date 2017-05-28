@@ -1,7 +1,9 @@
 
 C:\Windows\System32\drivers\etc
 
-# QQ 广告处理
+127.0.0.1       localhost
+
+# QQ 广告处理  打开 game 相关ip 
 0.0.0.0 fodder.qq.com
 0.0.0.0 adshmct.qq.com
 0.0.0.0 hm.l.qq.com
@@ -11,11 +13,11 @@ C:\Windows\System32\drivers\etc
 0.0.0.0 s.gdt.qq.com
 0.0.0.0 imc.l.qq.com
 0.0.0.0 client.show.qq.com
-0.0.0.0 user1.game.qq.com
+#0.0.0.0 user1.game.qq.com
 0.0.0.0 c.gdt.qq.com
 0.0.0.0 q.i.gdt.qq.com
 0.0.0.0 tj.b.qq.com
-0.0.0.0 dir.minigame.qq.com
+#0.0.0.0 dir.minigame.qq.com
 0.0.0.0 if.mingxing.qq.com
 0.0.0.0 showwxml.qq.com
 0.0.0.0 2052.flash2-http.qq.com
@@ -32,4 +34,3 @@ C:\Windows\System32\drivers\etc
 0.0.0.0 bugreportv2.qq.com
 0.0.0.0 ex.qq.com
 0.0.0.0 cgi.connect.qq.com
-
