@@ -4,13 +4,13 @@
   "version": "1.0",
   "description": "jack_Chrome插件",
   // debugger 开发
-  "devtools_page": "html/devtools.html",
+  // "devtools_page": "html/devtools.html",
   // 浏览器小图表部分
-  "browser_action": {
-    "default_title": "jack_Chrome插件",
-    "default_icon": "chome.png",
-    "default_popup": "html/test.html"
-  },
+  // "browser_action": {
+  //   "default_title": "jack_Chrome插件",
+  //   "default_icon": "chome.png",
+  //   "default_popup": "html/test.html"
+  // },
 
   // 引入脚本
   "content_scripts": [
