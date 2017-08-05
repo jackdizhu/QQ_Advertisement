@@ -18,7 +18,8 @@
       // 在什么情况下使用该脚本
       "matches": ["http://*/", "https://*/", "http://*/*", "https://*/*"],
       // 什么情况下运行【文档加载开始】
-      "run_at": "document_start",
+      // "run_at": "document_start",
+      "run_at": "document_end",
       // 引入脚本
       "js": ["./js01.js"]
     }
