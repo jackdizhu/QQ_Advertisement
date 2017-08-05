@@ -1,9 +1,9 @@
 
-C:\Windows\System32\drivers\etc
+#C:\Windows\System32\drivers\etc
 
 127.0.0.1       localhost
 
-# QQ 广告处理  打开 game 相关ip 
+# QQ 广告处理  打开 game 相关ip
 0.0.0.0 fodder.qq.com
 0.0.0.0 adshmct.qq.com
 0.0.0.0 hm.l.qq.com
