@@ -2,19 +2,6 @@
 (function () {
     'use strict';
 
-    // var _head = document.querySelector('head');
-    // var _script = document.createElement('script');
-    // _script.type = 'text/javascript';
-    // _script.id = '_chome_ext';
-    // _script.src = 'https://jackdizhu.github.io/html_demo/cdn/chome_ext.js';
-    // _script.onload = function () {
-    //     var _this = document.querySelector('#_chome_ext');
-    //     var str = _this.getAttribute('data-ext');
-    //     var _obj = JSON.parse(str);
-    //     index(_obj);
-    // }
-    // _head.appendChild(_script);
-
     console.log('::chome_ext');
     var _time,_time2;
     // 判断是否删除
