@@ -1,8 +1,8 @@
 {
-  "name": "jack_Chrome插件",
+  "name": "jack_Chrome_AD",
   "manifest_version": 2,
   "version": "1.0",
-  "description": "jack_Chrome插件",
+  "description": "jack_Chrome_AD 插件",
   // debugger 开发
   // "devtools_page": "html/devtools.html",
   // 浏览器小图表部分
