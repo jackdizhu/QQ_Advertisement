@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>popup.html</title>
+</head>
+<body>
+    <script language="JavaScript" type="text/javascript">
+var winBackgroundPage = chrome.extension.getBackgroundPage();
+if(winBackgroundPage)
+    document.write("Clicks:" + winBackgroundPage.Clicks());
+</script>
+</body>
+</html>
