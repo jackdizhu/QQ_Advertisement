@@ -30,10 +30,10 @@
     function index(_obj) {
         var u = window.location.href;
         var U = {
-            baidu:{
-                R: 'baidu.com',
-                id:['content_right']
-            }
+            // baidu:{
+            //     R: 'baidu.com',
+            //     id:['content_right']
+            // }
         };
         if(_obj){
             U = _obj;
