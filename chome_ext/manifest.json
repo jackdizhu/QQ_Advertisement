@@ -20,7 +20,7 @@
       // 什么情况下运行【文档加载开始】
       "run_at": "document_start",
       // 引入脚本
-      "js": ["./jquery.min.js","./test.js"]
+      "js": ["./js01.js"]
     }
   ]
   // 应用协议页面
