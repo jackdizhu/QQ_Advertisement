@@ -102,7 +102,29 @@
     function del_all() {
         del_iframe();
         del_a();
+
+        // 修改原生方法
+        edit_windowOpen();
+        edit_keyDown();
     }
+    // 改写window.open 方法
+    function edit_windowOpen() {
+        var _arg = arguments;
+        window.open = function () {
+            console.log('window.open 2');
+        }
+    }
+    edit_windowOpen();
+    // 改写onkeydow 方法
+    function edit_keyDown() {
+        document.onkeydown = function (event) {
+            event.stopPropagation();
+            event.preventDefault();
+            var _arg = arguments;
+            console.log('onkeydown 2');
+        }
+    }
+    edit_keyDown();
     // 循环遍历 根据域名 删除DOM
     function index(_obj) {
         // 所有页面执行
@@ -132,6 +154,7 @@
             }
         }
     }
+
 
 
 })();
