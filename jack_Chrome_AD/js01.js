@@ -12,6 +12,18 @@
         var str = _this.getAttribute('data-ext');
         var _obj = JSON.parse(str);
         index(_obj);
+
+        // 页面滚动时调用
+        var scrollT1 = 0;
+        window.onscroll = function () {
+            scrollT1 = new Date().getTime();
+            setTimeout(function () {
+                var scrollT2 = new Date().getTime();
+                if(scrollT2 - scrollT1 > 700){
+                    index(_obj);
+                }
+            },800);
+        }
     }
     _head.appendChild(_script);
 
@@ -72,6 +84,7 @@
         if(_obj){
             U = _obj;
         }
+        console.log(U);
         var R,k,_this;
         for(k in U){
             R = new RegExp("^http[s]?:\/\/[a-z.]+"+U[k].R+"");
@@ -86,21 +99,6 @@
             }
         }
     }
-    setTimeout(index(),1500);
 
-    var scrollT1 = 0;
-    window.onscroll = function () {
-        scrollT1 = new Date().getTime();
-        setTimeout(function () {
-            var scrollT2 = new Date().getTime();
-            if(scrollT2 - scrollT1 > 700){
-                index();
-            }
-        },800);
-    }
-    // index();
-    // var _time = setInterval(function () {
-    //     index();
-    // },3000);
 
 })();
