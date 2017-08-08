@@ -72,6 +72,19 @@
             get_parentNode(_this.parentNode,str);
         }
     }
+    // 清除所有 a _blank
+    function del_a() {
+        var _a = document.querySelectorAll('a');
+        for (var i = 0; i < _a.length; i++) {
+            if(_a[i].getAttribute('target') == '_blank'){
+                del_this(_a[i]);
+            }
+        }
+        if(document.querySelectorAll('a')){
+            var _this = document.querySelector('iframe');
+            del_this(_this);
+        }
+    }
     // 清除所有 iframe
     function del_iframe() {
         if(document.querySelector('iframe')){
@@ -79,9 +92,16 @@
             _this.parentNode.removeChild(_this);
         }
     }
+    // 删除DOM 本身
+    function del_this(_this) {
+        if(_this){
+            _this.parentNode.removeChild(_this);
+        }
+    }
     // 所有页面执行
     function del_all() {
         del_iframe();
+        del_a();
     }
     // 循环遍历 根据域名 删除DOM
     function index(_obj) {
