@@ -72,8 +72,22 @@
             get_parentNode(_this.parentNode,str);
         }
     }
+    // 清除所有 iframe
+    function del_iframe() {
+        if(document.querySelector('iframe')){
+            var _this = document.querySelector('iframe');
+            _this.parentNode.removeChild(_this);
+        }
+    }
+    // 所有页面执行
+    function del_all() {
+        del_iframe();
+    }
     // 循环遍历 根据域名 删除DOM
     function index(_obj) {
+        // 所有页面执行
+        del_all();
+
         var u = window.location.href;
         var U = {
             // baidu:{
@@ -84,7 +98,6 @@
         if(_obj){
             U = _obj;
         }
-        console.log(U);
         var R,k,_this;
         for(k in U){
             R = new RegExp("^http[s]?:\/\/[a-z.]+"+U[k].R+"");
