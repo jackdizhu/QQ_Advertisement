@@ -48,7 +48,6 @@
         edit_keyDown();
     },800);
 
-    console.log('::chome_ext');
     var _time,_time2;
     // 判断是否删除
     function is_empty(_this) {
@@ -142,13 +141,13 @@
             // event.stopPropagation();
             // event.preventDefault();
             var _arg = arguments;
-            console.log('onkeydown 2');
+            // console.log('onkeydown 2');
         }
     }
     edit_keyDown();
     // 循环遍历 根据域名 删除DOM
     function index(_obj) {
-        console.log('::chome_ext index');
+        // console.log('::chome_ext index');
         // 所有页面执行
         del_all();
 
@@ -190,7 +189,7 @@
                 var scrollT2 = new Date().getTime();
                 if(scrollT2 - scrollT1 > 700){
                     index(_obj);
-                    console.log('::chome_ext onscroll');
+                    // console.log('::chome_ext onscroll');
                 }
             },800);
         }
