@@ -1,0 +1,10 @@
+{
+  "name": "chel-app",
+  "version": "1.0.0",
+  "scripts": {
+    "crx": "node ./build_crx.js"
+  },
+  "dependencies": {
+    "crx": "^3.2.1"
+  }
+}
