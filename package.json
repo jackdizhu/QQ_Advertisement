@@ -2,9 +2,12 @@
   "name": "chel-app",
   "version": "1.0.0",
   "scripts": {
-    "crx": "node ./build_crx.js"
+    "crx": "node ./build_crx.js",
+    "key": "cd ./jack_Chrome_AD && crx pack -o jack_Chrome_AD.crx"
   },
   "dependencies": {
-    "crx": "^3.2.1"
+    "crx": "^3.2.1",
+    "gulp": "^3.9.1",
+    "gulp-crx-pack": "^1.0.2"
   }
 }
