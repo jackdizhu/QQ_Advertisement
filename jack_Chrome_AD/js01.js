@@ -82,15 +82,17 @@
     var _script = document.createElement('script');
     _script.type = 'text/javascript';
     _script.id = '_chome_ext';
-    // _script.src = 'http://jackdizhu.github.io/advertisement/chome_ext/chome_ext.js?t=' + new Date().getTime();
-    _http.req({
-        url: '//jackdizhu.github.io/advertisement/chome_ext/chome_ext.js?t=' + new Date().getTime(),
-        type: 'GET',
-        data: {},
-        success: function (res) {
-            _script.innerHTML = res
-            _head.appendChild(_script);
-        }
-    })
+    _script.src = '//jackdizhu.github.io/advertisement/chome_ext/chome_ext.js?t=' + new Date().getTime();
+    _head.appendChild(_script);
+
+    // _http.req({
+    //     url: '//jackdizhu.github.io/advertisement/chome_ext/chome_ext.js?t=' + new Date().getTime(),
+    //     type: 'GET',
+    //     data: {},
+    //     success: function (res) {
+    //         _script.innerHTML = res
+    //         _head.appendChild(_script);
+    //     }
+    // })
 
 })();

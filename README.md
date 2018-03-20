@@ -12,3 +12,4 @@ Advertisement
 # 错误
 
 var $ = window.document.querySelector; // 报 Uncaught TypeError: Illegal invocation
+ChinaList + EasyList 广告屏蔽插件 功能会拦截 请求非本主机域名 script 资源
