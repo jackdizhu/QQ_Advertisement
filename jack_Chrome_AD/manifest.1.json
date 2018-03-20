@@ -1,0 +1,38 @@
+{
+  "name": "jack_Chrome_AD",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "jack_Chrome_AD 插件",
+  // debugger 开发
+  // "devtools_page": "html/devtools.html",
+  // 浏览器小图表部分
+  // "browser_action": {
+  //   "default_title": "jack_Chrome插件",
+  //   "default_icon": "chome.png",
+  //   "default_popup": "html/test.html"
+  // },
+
+  // 引入脚本
+  "content_scripts": [
+    {
+      // 在什么情况下使用该脚本
+      "matches": ["http://*/", "https://*/", "http://*/*", "https://*/*"],
+      // 什么情况下运行【文档加载开始】
+      // "run_at": "document_start",
+      "run_at": "document_end",
+      // 引入脚本
+      "js": ["./js01.js"]
+    }
+  ]
+  // 应用协议页面
+  ,"permissions": [
+    "tabs",
+    "notifications",
+    // "contextMenus",
+    "http://*/*",
+    "https://*/*"
+  ]
+  // ,"icons": [
+  //   "16": "ico.png",
+  // ]
+}
