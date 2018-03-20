@@ -145,6 +145,7 @@
     edit_keyDown();
     // 循环遍历 根据域名 删除DOM
     function index(_obj) {
+        console.log('::chome_ext index');
         // 所有页面执行
         del_all();
 
