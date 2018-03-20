@@ -4,6 +4,9 @@
     function $(str) {
         return document.querySelector(str)
     }
+    function $All(str) {
+        return document.querySelectorAll(str)
+    }
     var chome_ext = {
         baidu:{
             R: 'baidu.com',
