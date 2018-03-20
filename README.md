@@ -8,3 +8,7 @@ Advertisement
     // chome_ext V2 增加远程资源请求
     https://jackdizhu.github.io/html_demo/cdn/chome_ext.js
     https://jackdizhu.github.io/advertisement/chome_ext/chome_ext.js
+
+# 错误
+
+var $ = window.document.querySelector; // 报 Uncaught TypeError: Illegal invocation

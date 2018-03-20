@@ -1,7 +1,10 @@
 
 (function () {
     'use strict';
-    var $ = window.document.querySelector;
+
+    function $(str) {
+        return document.querySelector(str)
+    }
 
     var _head = $('body');
     var _script = document.createElement('script');

@@ -1,5 +1,9 @@
 (function () {
-    var $ = window.document.querySelector;
+    'use strict';
+
+    function $(str) {
+        return document.querySelector(str)
+    }
     window._chome_ext = {
         baidu:{
             R: 'baidu.com',
