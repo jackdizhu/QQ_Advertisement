@@ -4,7 +4,7 @@
     function $(str) {
         return document.querySelector(str)
     }
-    window._chome_ext = {
+    var chome_ext = {
         baidu:{
             R: 'baidu.com',
             id:['#content_right','.fxuQda','.c-container<.c-icon-v3','.c-container<.c-icon-v2','.c-container<.c-icon-v1']
@@ -22,9 +22,6 @@
             id:['#_cs_bf_item','#cs_kd_form']
         }
     };
-    var _this = $('#_chome_ext');
-    var str = JSON.stringify(window._chome_ext);
-    _this.setAttribute('data-ext',str);
 
     // 改写window.open 方法
     function edit_windowOpen() {
@@ -178,9 +175,7 @@
 
     // 初始化执行
     (function () {
-        var _this = $('#_chome_ext');
-        var str = _this.getAttribute('data-ext');
-        var _obj = JSON.parse(str) || window._chome_ext;
+        var _obj = chome_ext;
         index(_obj);
 
         // 页面滚动时调用
