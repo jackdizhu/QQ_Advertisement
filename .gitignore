@@ -7,3 +7,4 @@ cordova/platforms
 cordova/plugins
 package-lock.json
 svn/
+jack_Chrome_AD/*.crx

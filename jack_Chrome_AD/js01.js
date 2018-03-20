@@ -1,8 +1,9 @@
 
 (function () {
     'use strict';
+    var $ = window.document.querySelector;
 
-    var _head = document.querySelector('head');
+    var _head = $('body');
     var _script = document.createElement('script');
     _script.type = 'text/javascript';
     _script.id = '_chome_ext';
