@@ -84,7 +84,7 @@
     _script.id = '_chome_ext';
     // _script.src = 'http://jackdizhu.github.io/advertisement/chome_ext/chome_ext.js?t=' + new Date().getTime();
     _http.req({
-        url: 'http://jackdizhu.github.io/advertisement/chome_ext/chome_ext.js',
+        url: '//jackdizhu.github.io/advertisement/chome_ext/chome_ext.js?t=' + new Date().getTime(),
         type: 'GET',
         data: {},
         success: function (res) {
