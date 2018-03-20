@@ -13,6 +13,4 @@
     _script.src = 'https://jackdizhu.github.io/advertisement/chome_ext/chome_ext.js';
     _head.appendChild(_script);
 
-    console.log('::chome_ext');
-
 })();

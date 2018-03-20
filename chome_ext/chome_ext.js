@@ -191,6 +191,7 @@
                 var scrollT2 = new Date().getTime();
                 if(scrollT2 - scrollT1 > 700){
                     index(_obj);
+                    console.log('::chome_ext onscroll');
                 }
             },800);
         }
