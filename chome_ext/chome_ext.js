@@ -9,6 +9,10 @@
             R: 'baidu.com',
             id:['#content_right','.fxuQda','.c-container<.c-icon-v3','.c-container<.c-icon-v2','.c-container<.c-icon-v1']
         },
+        sogou:{
+            R: 'sogou.com',
+            id:['#right']
+        },
         liewen:{
             R: 'liewen.cc',
             id:['#cs_right_bottom']
@@ -135,8 +139,8 @@
     // 改写onkeydow 方法
     function edit_keyDown() {
         document.onkeydown = function (event) {
-            event.stopPropagation();
-            event.preventDefault();
+            // event.stopPropagation();
+            // event.preventDefault();
             var _arg = arguments;
             console.log('onkeydown 2');
         }
