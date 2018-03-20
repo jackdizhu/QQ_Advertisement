@@ -180,7 +180,7 @@
     (function () {
         var _this = $('#_chome_ext');
         var str = _this.getAttribute('data-ext');
-        var _obj = JSON.parse(str);
+        var _obj = JSON.parse(str) || window._chome_ext;
         index(_obj);
 
         // 页面滚动时调用
