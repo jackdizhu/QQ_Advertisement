@@ -95,11 +95,11 @@
     // 清除所有 a _blank
     function del_a() {
         var _a = $All('a');
-        for (var i = 0; i < _a.length; i++) {
-            if(_a[i].getAttribute('target') == '_blank'){
-                del_this(_a[i]);
-            }
-        }
+        // for (var i = 0; i < _a.length; i++) {
+        //     if(_a[i].getAttribute('target') == '_blank'){
+        //         del_this(_a[i]);
+        //     }
+        // }
         if($All('a')){
             var _this = $('iframe');
             del_this(_this);
