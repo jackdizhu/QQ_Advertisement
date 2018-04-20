@@ -13,3 +13,9 @@ Advertisement
 
 var $ = window.document.querySelector; // 报 Uncaught TypeError: Illegal invocation
 ChinaList + EasyList 广告屏蔽插件 功能会拦截 请求非本主机域名 script 资源
+
+```
+// 屏蔽规则
+www.baidu.com##div[class*="cr-offset"][id="content_right"]
+www.sogou.com##div[class*="right"][id="right"]
+```
